@@ -26,6 +26,8 @@ thingsboardkafkaexample_zk_1                      /docker-entrypoint.sh zkSe ...
 Then you can login to Web UI of Thingsboard with default username and password `tenant@thingsboard.org/tenant`.  
 Some devices have already registered in Thingsboard, so you can use the device `Test Device A1` and the access token `A1_TEST_TOKEN`.
 
+...
+
 Next you will configure and activate new Kafka plugin, then you will create and activate new Kafka rule.  
 Please refer to the following link.
 [https://thingsboard.io/docs/reference/plugins/kafka/](https://thingsboard.io/docs/reference/plugins/kafka/)
@@ -35,6 +37,8 @@ NOTE: Please set correctly Kafka Bootstrap Servers URL as below.
 > Plugin configuration
 > 
 > Bootstrap Servers: `172.17.0.1:9092`
+
+...
 
 You will post new telemetry of Test Device A1.
 
@@ -61,7 +65,7 @@ Finally you can consume temp telemetry!
 73.4
 ```
 
-References
+## References
 
 - [Installing Thingsboard using Docker (Linux or Mac OS)](https://thingsboard.io/docs/user-guide/install/docker/)
 - [Dockerfile for Apache Kafka](https://github.com/wurstmeister/kafka-docker)
